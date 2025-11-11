@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vegetarian Cordon Bleu Recipe</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About the Team</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About the Team</a></li>
       </ul>
     </nav>
 
@@ -62,8 +62,8 @@
         <ol>
           <li>Preheat oven to 375°F (190°C).</li>
           <li>
-            Place a slice of vegetarian ham and cheese inside each mushroom
-            cap, then cover with another mushroom cap to form a "sandwich."
+            Place a slice of vegetarian ham and cheese inside each mushroom cap,
+            then cover with another mushroom cap to form a "sandwich."
           </li>
           <li>
             Prepare three bowls: one with flour, one with beaten eggs, and one
@@ -91,5 +91,16 @@
         </div>
       </div>
     </div>
+
+    <script>
+      if (window.location.pathname.endsWith(".html")) {
+        const newPath = window.location.pathname.replace(".html", "");
+        window.history.replaceState(
+          null,
+          "",
+          newPath + window.location.search + window.location.hash
+        );
+      }
+    </script>
   </body>
 </html>
